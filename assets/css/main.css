@@ -526,19 +526,15 @@ section {
     border-color: var(--color-primary);
   }
 
-  .navbar .dropdown ul,
-  .navbar .dropdown .dropdown ul {
-    position: static;
-    display: none;
-    padding: 10px 0;
-    margin: 10px 20px;
-    transition: all 0.5s ease-in-out;
-    border: 1px solid #eee;
-  }
-
-  .navbar .dropdown > .dropdown-active,
-  .navbar .dropdown .dropdown > .dropdown-active {
-    display: block;
+  .header .btn-book-a-table,
+  .header .btn-book-a-table:focus {
+    font-size: 14px;
+    color: #fff;
+    background: var(--color-button);
+    padding: 8px 15px;
+    margin-left: 12px;
+    border-radius: 50px;
+    transition: 0.3s;
   }
 
   .mobile-nav-show {
