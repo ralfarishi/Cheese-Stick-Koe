@@ -1028,8 +1028,14 @@ section {
   color: #fff;
 }
 
-.footer .footer-links {
+.footer .footer-links,
+.footer .footer-links a {
+  color: rgba(255, 255, 255, 0.356);
   margin-bottom: 30px;
+}
+
+.footer .footer-links a:hover {
+  color: #eee;
 }
 
 .footer .social-links a {
