@@ -581,6 +581,14 @@ section {
 --------------------------------------------------------------*/
 .about .about-img {
   min-height: 500px;
+  /* background-position: 50% 90%; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about img {
+  width: 80%;
+  height: 50%;
 }
 
 .about h3 {
