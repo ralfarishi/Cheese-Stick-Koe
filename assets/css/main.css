@@ -314,6 +314,12 @@ section {
   background: rgba(206, 165, 18, 0.8);
 }
 
+@media (max-width: 575px) {
+  .header .logo img {
+    display: none;
+  }
+}
+
 @media (min-width: 300px) {
   .header .btn-book-a-table {
     text-align: center;
