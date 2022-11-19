@@ -976,10 +976,6 @@ section {
   margin-bottom: 30px;
 }
 
-.footer .footer-links a:hover {
-  color: #eee;
-}
-
 .footer .social-links a {
   display: flex;
   align-items: center;
@@ -1004,13 +1000,19 @@ section {
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+.footer .copyright a,
+.footer .credits a {
+  color: rgba(255, 255, 255, 0.356);
+}
+
+.footer .copyright a:hover,
+.footer .credits a:hover,
+.footer .footer-links a:hover {
+  color: #c1c1c1;
+}
 
 .footer .credits {
   padding-top: 4px;
   text-align: center;
   font-size: 13px;
-}
-
-.footer .credits a {
-  color: rgba(255, 255, 255, 0.484);
 }
