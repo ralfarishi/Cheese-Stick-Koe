@@ -926,11 +926,6 @@ section {
   .hero h2 {
     font-size: 36px;
   }
-
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 14px;
-  }
 }
 
 /*--------------------------------------------------------------
