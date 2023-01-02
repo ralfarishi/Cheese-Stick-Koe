@@ -617,6 +617,10 @@ section {
   font-family: var(--font-secondary);
 }
 
+.about .content span {
+  color: var(--color-primary);
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
