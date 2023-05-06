@@ -718,6 +718,7 @@ section {
 .menu .nav-link.active {
   color: var(--color-primary);
   border-color: var(--color-primary);
+  background: none;
 }
 
 .menu .tab-content .tab-header {
