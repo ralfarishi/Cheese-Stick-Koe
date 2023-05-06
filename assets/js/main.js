@@ -133,11 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /**
-   * Initiate pURE cOUNTER
-   */
-  new PureCounter();
-
-  /**
    * Init swiper slider with 1 slide at once in desktop view
    */
   new Swiper(".slides-1", {
