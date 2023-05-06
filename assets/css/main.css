@@ -311,7 +311,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
-  background: rgba(206, 165, 18, 0.8);
+  background: rgba(206, 56, 18, 0.8);
 }
 
 @media (max-width: 575px) {
@@ -934,12 +934,12 @@ section {
   transition: 0.5s;
   color: #fff;
   background: var(--color-button);
-  box-shadow: 0 8px 28px rgba(206, 181, 18, 0.2);
+  box-shadow: 0 8px 28px rgba(206, 43, 18, 0.2);
 }
 
 .hero .btn-book-a-table:hover {
-  background: rgba(206, 172, 18, 0.8);
-  box-shadow: 0 8px 28px rgba(206, 178, 18, 0.45);
+  background: rgba(206, 56, 18, 0.8);
+  box-shadow: 0 8px 28px rgba(206, 62, 18, 0.45);
 }
 
 .hero .btn-book-a-table i {
