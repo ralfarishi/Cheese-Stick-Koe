@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	"use strict";
+	("use strict");
 
 	/**
 	 * Preloader
@@ -230,22 +230,17 @@ document.addEventListener("DOMContentLoaded", () => {
 			mirror: false,
 		});
 	}
+
+	// File: main.js
+	function loadGTM() {
+		var scriptTag = document.createElement("script");
+		scriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-PH7SMQLB23";
+		scriptTag.async = true;
+		document.head.appendChild(scriptTag);
+	}
+
 	window.addEventListener("load", () => {
 		aos_init();
+		loadGTM();
 	});
 });
-
-// File: main.js
-function loadGTM() {
-	var scriptTag = document.createElement("script");
-	scriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-PH7SMQLB23";
-	scriptTag.async = true;
-	document.head.appendChild(scriptTag);
-}
-
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-	dataLayer.push(arguments);
-}
-gtag("js", new Date());
-gtag("config", "G-PH7SMQLB23");
