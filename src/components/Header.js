@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 function Header() {
@@ -26,26 +27,26 @@ function Header() {
 					<nav id="navbar" className="navbar">
 						<ul>
 							<li>
-								<a href="#hero">Home</a>
+								<Link href="#hero">Home</Link>
 							</li>
 							<li>
-								<a href="#about">About</a>
+								<Link href="#about">About</Link>
 							</li>
 							<li>
-								<a href="#menu">Menu</a>
+								<Link href="#menu">Menu</Link>
 							</li>
 							<li>
-								<a href="#gallery">Gallery</a>
+								<Link href="#gallery">Gallery</Link>
 							</li>
 							<li>
-								<a href="#testimonials">Testimonial</a>
+								<Link href="#testimonials">Testimonial</Link>
 							</li>
 						</ul>
 					</nav>
 					{/* .navbar */}
-					<a className="btn-book-a-table" href="#menu">
+					<Link className="btn-book-a-table" href="#menu">
 						Order now
-					</a>
+					</Link>
 					<i className="mobile-nav-toggle mobile-nav-show bi bi-list" />
 					<i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" />
 				</div>
