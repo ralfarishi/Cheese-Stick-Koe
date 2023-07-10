@@ -6,7 +6,6 @@ import "swiper/css/bundle";
 import "@/styles/glightbox.min.css";
 
 import { DefaultSeo } from "next-seo";
-import Icon from "../../public/favicon.ico";
 
 export default function App({ Component, pageProps }) {
 	return (
@@ -27,7 +26,7 @@ export default function App({ Component, pageProps }) {
 				additionalLinkTags={[
 					{
 						rel: "icon",
-						href: <Icon />,
+						href: "../../public/favicon.ico",
 					},
 				]}
 			/>
