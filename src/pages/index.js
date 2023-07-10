@@ -981,13 +981,13 @@ function Home() {
 
 			<Footer />
 
-			<div class="floating_btn">
+			<div className="floating_btn">
 				<a target="_blank" href="https://wa.link/mvdgi5">
-					<div class="contact_icon">
-						<i class="bi bi-whatsapp my-float"></i>
+					<div className="contact_icon">
+						<i className="bi bi-whatsapp my-float"></i>
 					</div>
 				</a>
-				<p class="text_icon">Pesan sekarang!</p>
+				<p className="text_icon">Pesan sekarang!</p>
 			</div>
 		</>
 	);
