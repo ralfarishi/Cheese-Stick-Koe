@@ -71,11 +71,6 @@ function Home() {
 
 	return (
 		<>
-			<Head>
-				<title>Cheese Stick Koe: Makanan Ringan Bekasi</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-
 			<Header />
 			<Hero />
 

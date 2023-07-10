@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
 				additionalLinkTags={[
 					{
 						rel: "icon",
-						href: "../../public/favicon.ico",
+						href: "/favicon.ico",
 					},
 				]}
 			/>
