@@ -41,16 +41,11 @@ function Home() {
 		});
 
 		/**
-		 * Gallery Slider
+		 * Gallery SWiper
 		 */
-		const gallerySwiper = new Swiper(".gallery-slider", {
+		const gallerySwiper = new Swiper(".gallery-swiper", {
 			speed: 400,
-			loop: true,
 			centeredSlides: true,
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
 			slidesPerView: "auto",
 			pagination: {
 				el: ".swiper-pagination",
@@ -649,7 +644,7 @@ function Home() {
 								Check <span>Our Gallery</span>
 							</p>
 						</div>
-						<div className="gallery-slider swiper">
+						<div className="gallery-swiper swiper">
 							<div className="swiper-wrapper align-items-center">
 								<div className="swiper-slide">
 									<a

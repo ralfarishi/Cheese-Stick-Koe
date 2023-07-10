@@ -315,19 +315,19 @@ section {
 
 @media (max-width: 575px) {
 	.header .logo .img {
-		display: none;
+		display: none !important;
 	}
 }
 
 @media (min-width: 300px) {
 	.header .btn-book-a-table {
-		text-align: center;
-		width: 120px;
+		text-align: center !important;
+		width: 120px !important;
 	}
 
 	.header .logo h1 {
-		text-align: center;
-		font-size: 24px;
+		text-align: center !important;
+		font-size: 24px !important;
 	}
 }
 
@@ -488,108 +488,108 @@ section {
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
 	.navbar {
-		position: fixed;
-		top: 0;
-		right: -100%;
-		width: 100%;
-		max-width: 400px;
-		border-left: 1px solid #666;
-		bottom: 0;
-		transition: 0.3s;
-		z-index: 9997;
+		position: fixed !important;
+		top: 0 !important;
+		right: -100% !important;
+		width: 100% !important;
+		max-width: 400px !important;
+		border-left: 1px solid #666 !important;
+		bottom: 0 !important;
+		transition: 0.3s !important;
+		z-index: 9997 !important;
 	}
 
 	.navbar ul {
-		position: absolute;
-		inset: 0;
-		padding: 50px 0 10px 0;
-		margin: 0;
-		background: rgba(255, 255, 255, 0.9);
-		overflow-y: auto;
-		transition: 0.3s;
-		z-index: 9998;
+		position: absolute !important;
+		inset: 0 !important;
+		padding: 50px 0 10px 0 !important;
+		margin: 0 !important;
+		background: rgba(255, 255, 255, 0.9) !important;
+		overflow-y: auto !important;
+		transition: 0.3s !important;
+		z-index: 9998 !important;
 	}
 
 	.navbar a,
 	.navbar a:focus {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 10px 20px;
-		font-family: var(--font-secondary);
-		border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-		font-size: 16px;
-		font-weight: 600;
-		color: #7f7f90;
-		white-space: nowrap;
-		transition: 0.3s;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		padding: 10px 20px !important;
+		font-family: var(--font-secondary) !important;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.8) !important;
+		font-size: 16px !important;
+		font-weight: 600 !important;
+		color: #7f7f90 !important;
+		white-space: nowrap !important;
+		transition: 0.3s !important;
 	}
 
 	.navbar a i,
 	.navbar a:focus i {
-		font-size: 12px;
-		line-height: 0;
-		margin-left: 5px;
+		font-size: 12px !important;
+		line-height: 0 !important;
+		margin-left: 5px !important;
 	}
 
 	.navbar a:hover,
 	.navbar li:hover > a {
-		color: #000;
+		color: #000 !important;
 	}
 
 	.navbar .active,
 	.navbar .active:focus {
-		color: #000;
-		border-color: var(--color-primary);
+		color: #000 !important;
+		border-color: var(--color-primary) !important;
 	}
 
 	.header .btn-book-a-table,
 	.header .btn-book-a-table:focus {
-		font-size: 14px;
-		color: #fff;
-		background: var(--color-button);
-		padding: 8px 15px;
-		margin-left: 12px;
-		border-radius: 50px;
-		transition: 0.3s;
+		font-size: 14px !important;
+		color: #fff !important;
+		background: var(--color-button) !important;
+		padding: 8px 15px !important;
+		margin-left: 12px !important;
+		border-radius: 50px !important;
+		transition: 0.3s !important;
 	}
 
 	.mobile-nav-show {
-		color: var(--color-secondary);
-		font-size: 28px;
-		cursor: pointer;
-		line-height: 0;
-		transition: 0.5s;
-		z-index: 9999;
-		margin: 0 10px 0 20px;
+		color: var(--color-secondary) !important;
+		font-size: 28px !important;
+		cursor: pointer !important;
+		line-height: 0 !important;
+		transition: 0.5s !important;
+		z-index: 9999 !important;
+		margin: 0 10px 0 20px !important;
 	}
 
 	.mobile-nav-hide {
-		color: var(--color-secondary);
-		font-size: 32px;
-		cursor: pointer;
-		line-height: 0;
-		transition: 0.5s;
-		position: fixed;
-		right: 20px;
-		top: 20px;
-		z-index: 9999;
+		color: var(--color-secondary) !important;
+		font-size: 32px !important;
+		cursor: pointer !important;
+		line-height: 0 !important;
+		transition: 0.5s !important;
+		position: fixed !important;
+		right: 20px !important;
+		top: 20px !important;
+		z-index: 9999 !important;
 	}
 
 	.mobile-nav-active {
-		overflow: hidden;
+		overflow: hidden !important;
 	}
 
 	.mobile-nav-active .navbar {
-		right: 0;
+		right: 0 !important;
 	}
 
 	.mobile-nav-active .navbar:before {
-		content: "";
-		position: fixed;
-		inset: 0;
-		background: rgba(255, 255, 255, 0.8);
-		z-index: 9996;
+		content: "" !important;
+		position: fixed !important;
+		inset: 0 !important;
+		background: rgba(255, 255, 255, 0.8) !important;
+		z-index: 9996 !important;
 	}
 }
 

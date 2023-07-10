@@ -20,7 +20,6 @@ export default function Document() {
 				<NextScript />
 				{/* Custom JS */}
 				<script async src="/js/main.js"></script>
-				<script async src="/js/bootstrap.bundle.min.js"></script>
 				<script async src="/js/glightbox.min.js"></script>
 			</body>
 		</Html>
