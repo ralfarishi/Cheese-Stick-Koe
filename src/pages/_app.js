@@ -6,6 +6,7 @@ import "swiper/css/bundle";
 import "@/styles/glightbox.min.css";
 
 import { DefaultSeo } from "next-seo";
+import Icon from "../../public/favicon.ico";
 
 export default function App({ Component, pageProps }) {
 	return (
@@ -23,6 +24,12 @@ export default function App({ Component, pageProps }) {
 				}}
 				canonical="https://www.cheesestick-koe.online/"
 				keywords="jual cheese stick bekasi, toko makanan ringan bekasi, cheese stick keju edam, jual cheese stick"
+				additionalLinkTags={[
+					{
+						rel: "icon",
+						href: <Icon />,
+					},
+				]}
 			/>
 			<Component {...pageProps} />
 		</>
