@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 
 function Header() {
 	return (
@@ -11,7 +11,7 @@ function Header() {
 				className="header fixed-top d-flex align-items-center"
 			>
 				<div className="container d-flex align-items-center justify-content-between">
-					<a
+					<Link
 						href="/"
 						className="logo d-flex align-items-center me-auto me-lg-0"
 					>
@@ -23,7 +23,7 @@ function Header() {
 							className="img"
 						/>
 						<h1 className="title">Cheese Stick Koe</h1>
-					</a>
+					</Link>
 					<nav id="navbar" className="navbar">
 						<ul>
 							<li>
