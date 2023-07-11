@@ -19,8 +19,8 @@ export default function Document() {
 				<Main />
 				<NextScript />
 				{/* Custom JS */}
-				<script src="/js/main.js"></script>
-				<script src="/js/glightbox.min.js"></script>
+				<script async src="/js/main.js"></script>
+				<script async src="/js/glightbox.min.js"></script>
 			</body>
 		</Html>
 	);
