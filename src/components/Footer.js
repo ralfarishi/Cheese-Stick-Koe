@@ -46,6 +46,13 @@ function Footer() {
 								>
 									<i className="bi bi-instagram" />
 								</a>
+								<a
+									href="https://www.tiktok.com/@cheesestickkoe"
+									className="tiktok"
+									target="_blank"
+								>
+									<i className="bi bi-tiktok" />
+								</a>
 							</div>
 						</div>
 					</div>
