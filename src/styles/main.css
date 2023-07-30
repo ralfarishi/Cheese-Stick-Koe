@@ -2,7 +2,7 @@
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Pattaya&display=swap");
 
 /* Fonts */
 :root {
@@ -351,8 +351,8 @@ section {
 	}
 
 	.header .logo h1 {
-		text-align: center !important;
-		font-size: 24px !important;
+		text-align: center;
+		font-size: 22px;
 	}
 }
 
