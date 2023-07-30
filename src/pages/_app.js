@@ -1,6 +1,6 @@
 import "@/styles/main.css";
 import "aos/dist/aos.css";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "swiper/css/bundle";
 import "@/styles/glightbox.min.css";

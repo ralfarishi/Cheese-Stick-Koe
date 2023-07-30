@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 
+import Modal from "@/components/Modal";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
@@ -27,6 +28,7 @@ function Home() {
 			<Hero />
 
 			<main id="main">
+				<Modal />
 				{/* ======= About Section ======= */}
 				<section id="about" className="about">
 					<div className="container" data-aos="fade-up">
