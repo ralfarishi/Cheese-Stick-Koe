@@ -62,7 +62,7 @@ function Footer() {
 						Modified by{" "}
 						<strong>
 							<span>
-								<a href="https://alfarishi.xyz" target="_blank">
+								<a href="https://alfarishi.my.id" target="_blank">
 									Al Farishi
 								</a>
 							</span>
