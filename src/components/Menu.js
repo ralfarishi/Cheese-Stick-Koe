@@ -87,7 +87,7 @@ export default function Menu() {
 									<p className="descriptions">
 										Packing: Plastik pouch uk. 250 gr x 4 pcs
 									</p>
-									<p className="price">Rp. 150.000</p>
+									<p className="price">Rp. 175.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -119,7 +119,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Marmer</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -133,7 +133,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Pisang</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -147,7 +147,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Zebra</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -161,7 +161,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Marmer Pandan</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 							</div>
@@ -184,7 +184,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Coklat Chocochip</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -198,7 +198,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Sukade</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -212,7 +212,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Keju</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -226,7 +226,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Meses</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -240,7 +240,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Brownies Coklat</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 60.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -254,7 +254,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Brownies Keju</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 60.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -271,7 +271,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Brownies Coklat Keju</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 65.000</p>
 								</div>
 								{/* Menu Item */}
 								<div className="col-lg-4 menu-item">
@@ -285,7 +285,7 @@ export default function Menu() {
 										/>
 									</a>
 									<h4>Bolu Gula Merah</h4>
-									<p className="price mt-4">Rp. 50.000</p>
+									<p className="price mt-4">Rp. 75.000</p>
 								</div>
 								{/* Menu Item */}
 							</div>
