@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 import Swiper from "swiper/bundle";
+import GalleryItem from "./utils/GalleryItem";
 
 export default function Gallery() {
 	useEffect(() => {
@@ -12,6 +13,10 @@ export default function Gallery() {
 			speed: 400,
 			centeredSlides: true,
 			slidesPerView: "auto",
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
 			pagination: {
 				el: ".swiper-pagination",
 				type: "bullets",
@@ -22,7 +27,7 @@ export default function Gallery() {
 					slidesPerView: 1,
 					spaceBetween: 20,
 				},
-				640: {
+				768: {
 					slidesPerView: 3,
 					spaceBetween: 20,
 				},
@@ -47,111 +52,22 @@ export default function Gallery() {
 					</div>
 					<div className="gallery-swiper swiper">
 						<div className="swiper-wrapper align-items-center">
-							<div className="swiper-slide">
-								<a
-									className="glightbox"
-									data-gallery="images-gallery"
-									href="/img/galleries/varian-bolu.jpeg"
-								>
-									<Image
-										src="/img/galleries/varian-bolu.jpeg"
-										className="img-fluid"
-										alt="Varian Bolu"
-										width={243}
-										height={263}
-									/>
-								</a>
-							</div>
-							<div className="swiper-slide">
-								<a
-									className="glightbox"
-									data-gallery="images-gallery"
-									href="/img/galleries/varian-yakult.jpeg"
-								>
-									<Image
-										src="/img/galleries/varian-yakult.jpeg"
-										className="img-fluid"
-										alt="Varian Yakult"
-										width={243}
-										height={324}
-									/>
-								</a>
-							</div>
-							<div className="swiper-slide">
-								<a
-									className="glightbox"
-									data-gallery="images-gallery"
-									href="/img/galleries/cheese-stick-tabung.jpeg"
-								>
-									<Image
-										src="/img/galleries/cheese-stick-tabung.jpeg"
-										className="img-fluid"
-										alt="Cheese Stick Tabung Gallery"
-										width={243}
-										height={324}
-									/>
-								</a>
-							</div>
-							<div className="swiper-slide">
-								<a
-									className="glightbox"
-									data-gallery="images-gallery"
-									href="/img/galleries/potongan-bolu.jpeg"
-								>
-									<Image
-										src="/img/galleries/potongan-bolu.jpeg"
-										className="img-fluid"
-										alt="Potongan Bolu"
-										width={243}
-										height={278}
-									/>
-								</a>
-							</div>
-							<div className="swiper-slide">
-								<a
-									className="glightbox"
-									data-gallery="images-gallery"
-									href="/img/galleries/bolu-kardus.jpeg"
-								>
-									<Image
-										src="/img/galleries/bolu-kardus.jpeg"
-										className="img-fluid"
-										alt="Bolu Kardus"
-										width={243}
-										height={289}
-									/>
-								</a>
-							</div>
-							<div className="swiper-slide">
-								<a
-									className="glightbox"
-									data-gallery="images-gallery"
-									href="/img/galleries/cheese-stick-pouch.jpeg"
-								>
-									<Image
-										src="/img/galleries/cheese-stick-pouch.jpeg"
-										className="img-fluid"
-										alt="Cheese Stick Pouch Gallery"
-										width={243}
-										height={324}
-									/>
-								</a>
-							</div>
-							<div className="swiper-slide">
-								<a
-									className="glightbox"
-									data-gallery="images-gallery"
-									href="/img/galleries/cheese-stick-pouch-2.jpeg"
-								>
-									<Image
-										src="/img/galleries/cheese-stick-pouch-2.jpeg"
-										className="img-fluid"
-										alt="Cheese Stick Pouch Gallery 2"
-										width={224}
-										height={298}
-									/>
-								</a>
-							</div>
+							<GalleryItem image="varian-bolu.jpeg" name="Varian Bolu" />
+							<GalleryItem image="varian-yakult.jpeg" name="Varian Yakult" />
+							<GalleryItem
+								image="cheese-stick-tabung.jpeg"
+								name="Cheese Stick Tabung"
+							/>
+							<GalleryItem image="potongan-bolu.jpeg" name="Potongan Bolu" />
+							<GalleryItem image="bolu-kardus.jpeg" name="Bolu Kardus" />
+							<GalleryItem
+								image="cheese-stick-pouch.jpeg"
+								name="Cheese Stick Pouch Gallery"
+							/>
+							<GalleryItem
+								image="cheese-stick-pouch-2.jpeg"
+								name="Cheese Stick Pouch Gallery 2"
+							/>
 						</div>
 						<div className="swiper-pagination" />
 					</div>
