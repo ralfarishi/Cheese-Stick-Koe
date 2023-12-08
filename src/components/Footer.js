@@ -11,14 +11,14 @@ function Footer() {
 							<i className="bi bi-telephone icon" />
 							<div>
 								<h4>Order</h4>
-								<a href="https://wa.link/mvdgi5" target="_blank">
+								<a href="https://wa.link/9gzsvd" target="_blank">
 									<p>
 										<i className="bi bi-whatsapp" /> <strong>Admin 1:</strong>{" "}
 										+62 811-973-173
 										<br />
 									</p>
 								</a>
-								<a href="https://wa.link/8jw1yj" target="_blank">
+								<a href="https://wa.link/vi9m34" target="_blank">
 									<p>
 										<i className="bi bi-whatsapp" /> <strong>Admin 2:</strong>{" "}
 										+62 812-8147-2627
