@@ -16,12 +16,12 @@ export default function App({ Component, pageProps }) {
 				openGraph={{
 					type: "website",
 					locale: "en_IE",
-					url: "https://www.cheesestick-koe.online/",
+					url: "https://www.cheesestick-koe.my.id/",
 					siteName: "Cheese Stick Koe",
 					description:
 						"Temukan cheese sticks terbaik dan enak untuk makanan ringan sehat dan praktis. Kami menyediakan berbagai pilihan rasa dan bahan yang berkualitas.",
 				}}
-				canonical="https://www.cheesestick-koe.online/"
+				canonical="https://www.cheesestick-koe.my.id/"
 				keywords="jual cheese stick bekasi, toko makanan ringan bekasi, cheese stick keju edam, jual cheese stick"
 				additionalLinkTags={[
 					{
