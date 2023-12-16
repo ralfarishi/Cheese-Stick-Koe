@@ -75,13 +75,13 @@ export default function Menu() {
 									image="cheese_stick_1kg.png"
 									name="Cheese Stick 1 Kg"
 									description="Packing: Plastik pouch uk. 250 gr x 4 pcs"
-									price="150.000"
+									price="160.000"
 								/>
 								<MenuItem
 									image="chees_stick_1_ons.png"
 									name="Cheese Stick 1 Ons"
 									description="Ukuran 1 ons"
-									price="15.000"
+									price="16.500"
 								/>
 								<MenuItem
 									image="bolu_marmer.png"
@@ -164,18 +164,18 @@ export default function Menu() {
 								<MenuItem
 									image="pie susu.png"
 									name="Pie Susu"
-									price="3.500/pcs"
+									price="4.000/pcs"
 								/>
 								<MenuItem
 									image="cheese_stick_tabung.png"
 									name="Cheese Stick Tabung"
 									description="Ukuran 150 gram"
-									price="35.000"
+									price="38.000"
 								/>
 								<MenuItem
 									image="banana_strudel.png"
 									name="Banana Strudel"
-									price="45.000"
+									price="55.000"
 								/>
 							</div>
 						</div>
@@ -189,42 +189,42 @@ export default function Menu() {
 								<MenuItem
 									image="yakult_anggur.png"
 									name="Es Yakult - Anggur"
-									price="8.000"
+									price="10.000"
 								/>
 								<MenuItem
 									image="yakult_jambu.png"
 									name="Es Yakult - Jambu"
-									price="8.000"
+									price="10.000"
 								/>
 								<MenuItem
 									image="yakult_mangga.png"
 									name="Es Yakult - Mangga"
-									price="8.000"
+									price="10.000"
 								/>
 								<MenuItem
 									image="yakult_jeruk.png"
 									name="Es Yakult - Jeruk"
-									price="8.000"
+									price="10.000"
 								/>
 								<MenuItem
 									image="yakult_melon.png"
 									name="Es Yakult - Melon"
-									price="8.000"
+									price="10.000"
 								/>
 								<MenuItem
 									image="yakult_sirsak.png"
 									name="Es Yakult - Sirsak"
-									price="8.000"
+									price="10.000"
 								/>
 								<MenuItem
 									image="yakult_strawberry.png"
 									name="Es Yakult - Strawberry"
-									price="8.000"
+									price="10.000"
 								/>
 								<MenuItem
 									image="yakult_leci.png"
 									name="Es Yakult - Leci"
-									price="8.000"
+									price="10.000"
 								/>
 							</div>
 						</div>
