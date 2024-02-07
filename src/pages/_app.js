@@ -5,6 +5,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "swiper/css/bundle";
 import "@/styles/glightbox.min.css";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { DefaultSeo } from "next-seo";
 
 export default function App({ Component, pageProps }) {
@@ -31,6 +33,7 @@ export default function App({ Component, pageProps }) {
 				]}
 			/>
 			<Component {...pageProps} />
+			<Analytics />
 		</>
 	);
 }
