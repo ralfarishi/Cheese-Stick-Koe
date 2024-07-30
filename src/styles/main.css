@@ -1102,6 +1102,21 @@ section {
 	font-size: 16px;
 }
 
+/* .last-update {
+	width: 20%;
+	height: 2em;
+	background-color: rgba(255, 255, 255, 0.137);
+	border-radius: 7px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.last-update p {
+	margin: 0;
+} */
+
 @media (max-width: 640px) {
 	.contact_icon {
 		width: 60px;
@@ -1112,4 +1127,9 @@ section {
 	.floating_btn {
 		right: 15px;
 	}
+
+	/* .last-update {
+		margin: auto;
+		width: 50%;
+	} */
 }

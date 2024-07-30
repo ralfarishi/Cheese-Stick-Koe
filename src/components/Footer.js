@@ -72,6 +72,9 @@ function Footer() {
 					<div className="credits">
 						Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
 					</div>
+					{/* <div className="last-update">
+						<p>Pembaruan terakhir pada 30 Juli 2024</p>
+					</div> */}
 				</div>
 			</footer>
 			{/* End Footer */}

@@ -75,33 +75,33 @@ export default function Menu() {
 									image="cheese_stick_1kg.png"
 									name="Cheese Stick 1 Kg"
 									description="Packing: Plastik pouch uk. 250 gr x 4 pcs"
-									price="160.000"
+									price="170.000"
 								/>
 								<MenuItem
 									image="chees_stick_1_ons.png"
 									name="Cheese Stick 1 Ons"
 									description="Ukuran 1 ons"
-									price="16.500"
+									price="17.500"
 								/>
 								<MenuItem
 									image="bolu_marmer.png"
 									name="Bolu Marmer"
-									price="75.000"
+									price="80.000"
 								/>
 								<MenuItem
 									image="bolu_pisang.png"
 									name="Bolu Pisang"
-									price="75.000"
+									price="80.000"
 								/>
 								<MenuItem
 									image="bolu_zebra.png"
 									name="Bolu Zebra"
-									price="75.000"
+									price="80.000"
 								/>
 								<MenuItem
 									image="bolu_marmer_pan.png"
 									name="Bolu Marmer Pandan"
-									price="75.000"
+									price="80.000"
 								/>
 							</div>
 						</div>
@@ -115,22 +115,22 @@ export default function Menu() {
 								<MenuItem
 									image="bolu_coklat_coc.png"
 									name="Bolu Coklat Chocochip"
-									price="75.000"
+									price="80.000"
 								/>
 								<MenuItem
 									image="bolu_sukade.png"
 									name="Bolu Sukade"
-									price="75.000"
+									price="80.000"
 								/>
 								<MenuItem
 									image="bolu_keju.png"
 									name="Bolu Keju"
-									price="75.000"
+									price="80.000"
 								/>
 								<MenuItem
 									image="bolu_meses.png"
 									name="Bolu Meses"
-									price="75.000"
+									price="80.000"
 								/>
 								<MenuItem
 									image="brownies_coklat.png"
@@ -150,7 +150,7 @@ export default function Menu() {
 								<MenuItem
 									image="bolu_gula_merah.png"
 									name="Bolu Gula Merah"
-									price="75.000"
+									price="80.000"
 								/>
 							</div>
 						</div>
