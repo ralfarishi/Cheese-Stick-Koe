@@ -34,31 +34,19 @@ export default function Menu() {
 						</li>
 						{/* End tab nav item */}
 						<li className="nav-item">
-							<a
-								className="nav-link"
-								data-bs-toggle="tab"
-								data-bs-target="#menu-cakes"
-							>
+							<a className="nav-link" data-bs-toggle="tab" data-bs-target="#menu-cakes">
 								<h4>Cakes</h4>{" "}
 							</a>
 							{/* End tab nav item */}
 						</li>
 						<li className="nav-item">
-							<a
-								className="nav-link"
-								data-bs-toggle="tab"
-								data-bs-target="#menu-snacks"
-							>
+							<a className="nav-link" data-bs-toggle="tab" data-bs-target="#menu-snacks">
 								<h4>Snacks</h4>
 							</a>
 						</li>
 						{/* End tab nav item */}
 						<li className="nav-item">
-							<a
-								className="nav-link"
-								data-bs-toggle="tab"
-								data-bs-target="#menu-drinks"
-							>
+							<a className="nav-link" data-bs-toggle="tab" data-bs-target="#menu-drinks">
 								<h4>Drinks</h4>
 							</a>
 						</li>
@@ -84,24 +72,46 @@ export default function Menu() {
 									price="17.500"
 								/>
 								<MenuItem
+									image="mac-schotel15x10.jpg"
+									name="Macaroni Schotel"
+									description="Ukuran loyang 15x10"
+									price="30.000"
+								/>
+								<MenuItem
 									image="bolu_marmer.png"
 									name="Bolu Marmer"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
 								<MenuItem
 									image="bolu_pisang.png"
 									name="Bolu Pisang"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
 								<MenuItem
 									image="bolu_zebra.png"
 									name="Bolu Zebra"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
 								<MenuItem
-									image="bolu_marmer_pan.png"
-									name="Bolu Marmer Pandan"
-									price="80.000"
+									image="brule20x20.jpg"
+									name="Spaghetti Brulee"
+									description="Ukuran loyang 20x20"
+									price="120.000"
+								/>
+								<MenuItem
+									image="brownies-panggang20x10.png"
+									name="Brownies Panggang"
+									description="Ukuran loyang 20x10"
+									price="45.000"
+								/>
+								<MenuItem
+									image="mac-schotel20x10.png"
+									name="Macaroni Schotel"
+									description="Ukuran loyang 20x10"
+									price="50.000"
 								/>
 							</div>
 						</div>
@@ -113,35 +123,37 @@ export default function Menu() {
 							</div>
 							<div className="row gy-5">
 								<MenuItem
+									image="bolu_marmer_pan.png"
+									name="Bolu Marmer Pandan"
+									description="Ukuran loyang 22"
+									price="70.000"
+								/>
+								<MenuItem
 									image="bolu_coklat_coc.png"
 									name="Bolu Coklat Chocochip"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
 								<MenuItem
 									image="bolu_sukade.png"
 									name="Bolu Sukade"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
 								<MenuItem
 									image="bolu_keju.png"
 									name="Bolu Keju"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
 								<MenuItem
 									image="bolu_meses.png"
 									name="Bolu Meses"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
-								<MenuItem
-									image="brownies_coklat.png"
-									name="Brownies Coklat"
-									price="60.000"
-								/>
-								<MenuItem
-									image="brownies_keju.png"
-									name="Brownies Keju"
-									price="60.000"
-								/>
+								<MenuItem image="brownies_coklat.png" name="Brownies Coklat" price="60.000" />
+								<MenuItem image="brownies_keju.png" name="Brownies Keju" price="60.000" />
 								<MenuItem
 									image="brownies_coklat_keju.png"
 									name="Brownies Coklat Keju"
@@ -150,7 +162,8 @@ export default function Menu() {
 								<MenuItem
 									image="bolu_gula_merah.png"
 									name="Bolu Gula Merah"
-									price="80.000"
+									description="Ukuran loyang 22"
+									price="70.000"
 								/>
 							</div>
 						</div>
@@ -161,21 +174,25 @@ export default function Menu() {
 								<h3>Snacks</h3>
 							</div>
 							<div className="row gy-5">
-								<MenuItem
-									image="pie susu.png"
-									name="Pie Susu"
-									price="4.000/pcs"
-								/>
+								<MenuItem image="pie susu.png" name="Pie Susu" price="4.000/pcs" />
 								<MenuItem
 									image="cheese_stick_tabung.png"
 									name="Cheese Stick Tabung"
 									description="Ukuran 150 gram"
 									price="38.000"
 								/>
+								<MenuItem image="banana_strudel.png" name="Banana Strudel" price="55.000" />
 								<MenuItem
-									image="banana_strudel.png"
-									name="Banana Strudel"
-									price="55.000"
+									image="mac-schotel20x20.jpg"
+									name="Macaroni Schotel"
+									description="Ukuran loyang 20x20"
+									price="95.000"
+								/>
+								<MenuItem
+									image="brownies-panggang20x20.png"
+									name="Brownies Panggang"
+									description="Ukuran loyang 20x20"
+									price="85.000"
 								/>
 							</div>
 						</div>
@@ -186,46 +203,18 @@ export default function Menu() {
 								<h3>Drinks</h3>
 							</div>
 							<div className="row gy-5">
-								<MenuItem
-									image="yakult_anggur.png"
-									name="Es Yakult - Anggur"
-									price="10.000"
-								/>
-								<MenuItem
-									image="yakult_jambu.png"
-									name="Es Yakult - Jambu"
-									price="10.000"
-								/>
-								<MenuItem
-									image="yakult_mangga.png"
-									name="Es Yakult - Mangga"
-									price="10.000"
-								/>
-								<MenuItem
-									image="yakult_jeruk.png"
-									name="Es Yakult - Jeruk"
-									price="10.000"
-								/>
-								<MenuItem
-									image="yakult_melon.png"
-									name="Es Yakult - Melon"
-									price="10.000"
-								/>
-								<MenuItem
-									image="yakult_sirsak.png"
-									name="Es Yakult - Sirsak"
-									price="10.000"
-								/>
+								<MenuItem image="yakult_anggur.png" name="Es Yakult - Anggur" price="10.000" />
+								<MenuItem image="yakult_jambu.png" name="Es Yakult - Jambu" price="10.000" />
+								<MenuItem image="yakult_mangga.png" name="Es Yakult - Mangga" price="10.000" />
+								<MenuItem image="yakult_jeruk.png" name="Es Yakult - Jeruk" price="10.000" />
+								<MenuItem image="yakult_melon.png" name="Es Yakult - Melon" price="10.000" />
+								<MenuItem image="yakult_sirsak.png" name="Es Yakult - Sirsak" price="10.000" />
 								<MenuItem
 									image="yakult_strawberry.png"
 									name="Es Yakult - Strawberry"
 									price="10.000"
 								/>
-								<MenuItem
-									image="yakult_leci.png"
-									name="Es Yakult - Leci"
-									price="10.000"
-								/>
+								<MenuItem image="yakult_leci.png" name="Es Yakult - Leci" price="10.000" />
 							</div>
 						</div>
 						{/* End Drinks Menu Content */}

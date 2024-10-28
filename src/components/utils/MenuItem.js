@@ -7,7 +7,7 @@ export default function MenuItem({ image, name, description = "", price }) {
 			<a href={`/img/menu/${image}`} className="glightbox">
 				<Image
 					src={`/img/menu/${image}`}
-					className="menu-img img-fluid"
+					className="menu-img w-100"
 					alt={name}
 					width={416}
 					height={296}
