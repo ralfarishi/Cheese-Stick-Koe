@@ -17,14 +17,30 @@ export default function App({ Component, pageProps }) {
 				description="Temukan cheese sticks terbaik dan enak untuk makanan ringan sehat dan praktis. Kami menyediakan berbagai pilihan rasa dan bahan yang berkualitas."
 				openGraph={{
 					type: "website",
-					locale: "en_IE",
+					locale: "id_ID",
 					url: "https://www.cheesestick-koe.my.id/",
 					siteName: "Cheese Stick Koe",
 					description:
 						"Temukan cheese sticks terbaik dan enak untuk makanan ringan sehat dan praktis. Kami menyediakan berbagai pilihan rasa dan bahan yang berkualitas.",
+					images: [
+						{
+							url: "/img/cheese_stick_banner.png",
+							width: 800,
+							height: 600,
+							alt: "Cheese Stick Koe",
+						},
+					],
 				}}
 				canonical="https://www.cheesestick-koe.my.id/"
-				keywords="jual cheese stick bekasi, toko makanan ringan bekasi, cheese stick keju edam, jual cheese stick"
+				additionalMetaTags={[
+					{ name: "author", content: "Cheese Stick Koe" },
+					{ name: "language", content: "id-ID" },
+					{
+						name: "keywords",
+						content:
+							"cheese stick bekasi, snack rumahan bekasi, jual cemilan enak, bolu bekasi, pie susu",
+					},
+				]}
 				additionalLinkTags={[
 					{
 						rel: "icon",

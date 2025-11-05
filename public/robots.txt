@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
+Allow: /
+
 Sitemap: https://www.cheesestick-koe.my.id/sitemap.xml
