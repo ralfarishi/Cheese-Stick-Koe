@@ -116,32 +116,6 @@ export default function Hero() {
                 Hubungi Kami
               </a>
             </motion.div>
-
-            <motion.div
-              className="flex flex-wrap gap-8 justify-center lg:justify-start pt-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.6 }}
-            >
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold dark:text-primary">100+</div>
-                <div className="text-sm text-secondary-600 dark:text-secondary-400">
-                  Produk
-                </div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold dark:text-primary">500+</div>
-                <div className="text-sm text-secondary-600 dark:text-secondary-400">
-                  Pelanggan Puas
-                </div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold dark:text-primary">4.8★</div>
-                <div className="text-sm text-secondary-600 dark:text-secondary-400">
-                  Rating
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
 
           <motion.div

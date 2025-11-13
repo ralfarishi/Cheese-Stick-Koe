@@ -1,7 +1,14 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Check, Award, DollarSign, Star } from "lucide-react";
+import {
+  Check,
+  Award,
+  DollarSign,
+  Star,
+  Users,
+  UsersRound,
+} from "lucide-react";
 
 export default function About() {
   const { ref, inView } = useInView({
@@ -94,11 +101,11 @@ export default function About() {
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center">
-                  <Award className="w-6 h-6 text-primary dark:text-primary-500" />
+                  <UsersRound className="w-6 h-6 text-primary dark:text-primary-500" />
                 </div>
                 <div>
                   <div className="text-2xl font-bold dark:text-bg-white">
-                    500+
+                    300+
                   </div>
                   <div className="text-sm text-secondary-600 dark:text-secondary-400">
                     Happy Customers
@@ -118,8 +125,8 @@ export default function About() {
             {/* Description */}
             <div className="space-y-4">
               <p className="text-secondary-700 dark:text-secondary-300 text-lg leading-relaxed">
-                Selain menjual cheese stick, toko kami juga menjual berbagai
-                macam makanan dan minuman lainnya seperti{" "}
+                Selain menjual cheese stick, kami juga menjual berbagai macam
+                makanan dan minuman lainnya seperti{" "}
                 <span className="font-semibold text-primary dark:text-primary-500">
                   bolu, pie susu, strudel, es yakult
                 </span>
@@ -186,8 +193,8 @@ export default function About() {
               transition={{ delay: 0.8 }}
             >
               <p className="text-secondary-700 dark:text-secondary-300 mb-4">
-                Silahkan scroll ke bawah untuk melihat menu yang terdapat di
-                toko kami. Jangan lupa untuk melihat bagian testimoni ya... 😉
+                Silakan scroll ke bawah untuk melihat menu yang terdapat di toko
+                kami. Jangan lupa untuk melihat bagian testimoni ya... 😉
               </p>
               <a href="#menu" className="btn btn-primary">
                 Lihat Menu Lengkap
@@ -195,43 +202,6 @@ export default function About() {
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Product Showcase */}
-        <motion.div
-          className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.9 }}
-        >
-          {[
-            { src: "/img/cheese_stick_2.jpeg", title: "Cheese Stick" },
-            { src: "/img/about.jpg", title: "Bolu Homemade" },
-            { src: "/img/about-2.jpg", title: "Kue Kering" },
-            { src: "/img/cheese_stick_2.jpeg", title: "Minuman Segar" },
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              className="card card-hover overflow-hidden group"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ delay: 1 + index * 0.1 }}
-            >
-              <div className="relative aspect-square">
-                <Image
-                  src={item.src}
-                  alt={item.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-4 text-center">
-                <h4 className="font-sans! font-semibold dark:text-bg-white">
-                  {item.title}
-                </h4>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
