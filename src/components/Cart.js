@@ -1,5 +1,13 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { ShoppingCart, X, Plus, Minus, Trash2, Send } from "lucide-react";
+import {
+  ShoppingCart,
+  X,
+  Plus,
+  Minus,
+  Trash2,
+  Send,
+  CheckCircle,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -112,6 +120,24 @@ export const CartPanel = () => {
     clearCart,
   } = useCart();
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    };
+  }, [isOpen]);
+
   const formatPrice = (price) => {
     return parseFloat(price.replace(/\./g, "").replace(",", "."));
   };
@@ -158,11 +184,25 @@ export const CartPanel = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed right-0 top-0 h-full w-full sm:w-96 dark:bg-surface-10 shadow-2xl z-50 flex flex-col"
+            initial={{
+              x: window.innerWidth < 640 ? 0 : "100%",
+              y: window.innerWidth < 640 ? "100%" : 0,
+            }}
+            animate={{
+              x: 0,
+              y: 0,
+            }}
+            exit={{
+              x: window.innerWidth < 640 ? 0 : "100%",
+              y: window.innerWidth < 640 ? "100%" : 0,
+            }}
+            transition={{
+              type: "tween",
+              duration: 0.3,
+              ease: [0.32, 0.72, 0, 1],
+            }}
+            style={{ willChange: "transform" }}
+            className="fixed sm:right-0 right-0 sm:top-0 bottom-0 top-0 h-full w-full sm:w-96 bg-light dark:bg-surface-10 shadow-2xl z-50 flex flex-col"
           >
             {/* Header */}
             <div className="p-6 border-b border-surface-20 dark:border-surface-30">
@@ -189,7 +229,10 @@ export const CartPanel = () => {
             </div>
 
             {/* Cart Items */}
-            <div className="flex-1 overflow-y-auto p-6 space-y-4">
+            <div
+              className="flex-1 overflow-y-auto p-6 space-y-4"
+              onTouchMove={(e) => e.stopPropagation()}
+            >
               {cart.length === 0 ? (
                 <div className="flex flex-col items-center justify-center h-full text-center">
                   <ShoppingCart className="w-20 h-20 text-surface-40 mb-4" />
@@ -288,7 +331,7 @@ export const CartPanel = () => {
                 </div>
                 <button
                   onClick={handleCheckout}
-                  className="w-full btn btn-primary gap-2 justify-center"
+                  className="w-full btn dark:bg-success text-white gap-2 justify-center"
                 >
                   <Send size={18} />
                   <span>Checkout via WhatsApp</span>
@@ -302,10 +345,11 @@ export const CartPanel = () => {
   );
 };
 
-export const Toast = ({ message, isVisible, onClose }) => {
+// Toast Notification Component
+export const Toast = ({ message, isVisible, onClose, triggerZoom }) => {
   useEffect(() => {
     if (isVisible) {
-      const timer = setTimeout(onClose, 2000);
+      const timer = setTimeout(onClose, 1000);
       return () => clearTimeout(timer);
     }
   }, [isVisible, onClose]);
@@ -319,12 +363,17 @@ export const Toast = ({ message, isVisible, onClose }) => {
           exit={{ opacity: 0, y: -50 }}
           className="fixed top-24 left-1/2 -translate-x-1/2 z-50"
         >
-          <div className="bg-success dark:bg-success-10 text-white px-6 py-3 rounded-lg shadow-lg flex items-center gap-3">
-            <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
-              <ShoppingCart className="w-4 h-4" />
+          <motion.div
+            className="bg-success dark:bg-success-10 text-white px-6 py-3 rounded-lg shadow-lg flex items-center gap-3"
+            key={triggerZoom}
+            animate={{ scale: [1, 1.15, 1] }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="w-6 h-6 rounded-full flex items-center justify-center">
+              <CheckCircle className="w-4 h-4" />
             </div>
             <span className="font-medium">{message}</span>
-          </div>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

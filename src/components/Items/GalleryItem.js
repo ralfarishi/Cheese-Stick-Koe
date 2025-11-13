@@ -4,7 +4,13 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { ZoomIn } from "lucide-react";
 
-export default function GalleryItem({ image, name, category }) {
+export default function GalleryItem({
+  image,
+  name,
+  category,
+  height = "medium",
+  layout = "grid",
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const getCategoryColor = (cat) => {
@@ -21,13 +27,27 @@ export default function GalleryItem({ image, name, category }) {
     );
   };
 
+  const getAspectClass = () => {
+    if (layout === "grid") {
+      return "aspect-square";
+    }
+
+    // Masonry layout
+    const heights = {
+      short: "aspect-[4/3]",
+      medium: "aspect-square",
+      tall: "aspect-[3/4]",
+    };
+    return heights[height] || "aspect-square";
+  };
+
   return (
     <>
       <div
         className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
         onClick={() => setIsOpen(true)}
       >
-        <div className="relative aspect-square">
+        <div className={`relative ${getAspectClass()}`}>
           <Image
             src={`/img/galleries/${image}`}
             alt={name}

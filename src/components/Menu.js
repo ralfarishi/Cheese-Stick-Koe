@@ -42,19 +42,19 @@ export default function Menu() {
         image: "bolu_marmer.png",
         name: "Bolu Marmer",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "bolu_pisang.png",
         name: "Bolu Pisang",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "bolu_zebra.png",
         name: "Bolu Zebra",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "brule20x20.jpg",
@@ -80,31 +80,31 @@ export default function Menu() {
         image: "bolu_marmer_pan.png",
         name: "Bolu Marmer Pandan",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "bolu_coklat_coc.png",
         name: "Bolu Coklat Chocochip",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "bolu_sukade.png",
         name: "Bolu Sukade",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "bolu_keju.png",
         name: "Bolu Keju",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "bolu_meses.png",
         name: "Bolu Meses",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
       {
         image: "brownies_coklat.png",
@@ -125,7 +125,7 @@ export default function Menu() {
         image: "bolu_gula_merah.png",
         name: "Bolu Gula Merah",
         description: "Ukuran loyang 22",
-        price: "70.000",
+        price: "80.000",
       },
     ],
     snacks: [
@@ -205,7 +205,7 @@ export default function Menu() {
             <span className="text-primary dark:text-primary-500">Menu</span>
           </h2>
           <p className="text-secondary-600 dark:text-secondary-400 mt-4">
-            Pilihan menu terlengkap dengan kualitas terbaik untuk Anda
+            Pilihan menu terlengkap dengan kualitas terbaik untukmu
           </p>
         </motion.div>
 

@@ -87,10 +87,6 @@ export default function Testimonials() {
       className="section bg-secondary-50 dark:bg-surface-20 relative overflow-hidden"
       ref={ref}
     >
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary rounded-full blur-3xl" />
-      </div>
-
       <div className="container-custom relative z-10">
         {/* Section Header */}
         <motion.div
@@ -112,17 +108,8 @@ export default function Testimonials() {
         {/* Testimonials Carousel */}
         <div className="max-w-5xl mx-auto">
           <div className="relative">
-            <motion.div
-              className="absolute -top-8 left-8 md:left-1/2 md:-translate-x-1/2 w-16 h-16 dark:bg-primary rounded-full flex items-center justify-center z-10"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ delay: 0.3 }}
-            >
-              <Quote className="w-8 h-8 dark:text-neutral-200" />
-            </motion.div>
-
             {/* Testimonial Content */}
-            <div className="relative min-h-[400px] flex items-center">
+            <div className="relative min-h-[350px] flex items-center">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentIndex}
@@ -172,6 +159,7 @@ export default function Testimonials() {
           </div>
         </div>
 
+        {/* START value card */}
         <motion.div
           className="mt-16 grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
@@ -179,27 +167,40 @@ export default function Testimonials() {
           transition={{ delay: 0.8 }}
         >
           {[
-            { value: "98%", label: "Kepuasan Pelanggan" },
-            { value: "500+", label: "Review Positif" },
-            { value: "4.8/5", label: "Rating Rata-rata" },
+            {
+              value: "98%",
+              label: "Kepuasan Pelanggan",
+            },
+            {
+              value: "300+",
+              label: "Review Positif",
+            },
+            {
+              value: "4.8/5",
+              label: "Rating Rata-rata",
+            },
           ].map((stat, index) => (
             <motion.div
               key={index}
-              className="card p-8 text-center"
+              className="relative group"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.9 + index * 0.1 }}
-              whileHover={{ y: -5 }}
+              whileHover={{ y: -8 }}
             >
-              <div className="text-4xl font-bold text-primary mb-2">
-                {stat.value}
-              </div>
-              <div className="text-secondary-600 dark:text-secondary-400">
-                {stat.label}
+              <div className="card p-8 text-center relative overflow-hidden border border-surface-20 dark:border-surface-30 group-hover:border-primary/30 dark:group-hover:border-primary/40 transition-all duration-300 group-hover:shadow-xl">
+                <div className="text-5xl font-bold text-primary dark:text-primary-500 mb-3 group-hover:scale-110 transition-transform duration-300">
+                  {stat.value}
+                </div>
+
+                <div className="text-sm font-medium text-secondary-600 dark:text-secondary-400">
+                  {stat.label}
+                </div>
               </div>
             </motion.div>
           ))}
         </motion.div>
+        {/* END value card */}
       </div>
     </section>
   );

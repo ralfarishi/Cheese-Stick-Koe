@@ -12,24 +12,47 @@ export default function Galleries() {
   });
 
   const galleryItems = [
-    { image: "varian-bolu.jpeg", name: "Varian Bolu", category: "cakes" },
-    { image: "varian-yakult.jpeg", name: "Varian Yakult", category: "drinks" },
+    {
+      image: "varian-bolu.jpeg",
+      name: "Varian Bolu",
+      category: "cakes",
+      height: "medium ",
+    },
+    {
+      image: "varian-yakult.jpeg",
+      name: "Varian Yakult",
+      category: "drinks",
+      height: "tall",
+    },
     {
       image: "cheese-stick-tabung.jpeg",
       name: "Cheese Stick Tabung",
       category: "snacks",
+      height: "short",
     },
-    { image: "potongan-bolu.jpeg", name: "Potongan Bolu", category: "cakes" },
-    { image: "bolu-kardus.jpeg", name: "Bolu Kardus", category: "cakes" },
+    {
+      image: "potongan-bolu.jpeg",
+      name: "Potongan Bolu",
+      category: "cakes",
+      height: "medium",
+    },
+    {
+      image: "bolu-kardus.jpeg",
+      name: "Bolu Kardus",
+      category: "cakes",
+      height: "tall",
+    },
     {
       image: "cheese-stick-pouch.jpeg",
       name: "Cheese Stick Pouch",
       category: "snacks",
+      height: "medium",
     },
     {
       image: "cheese-stick-pouch-2.jpeg",
       name: "Cheese Stick Pouch 2",
       category: "snacks",
+      height: "short",
     },
   ];
 
@@ -63,7 +86,7 @@ export default function Galleries() {
         </motion.div>
 
         <motion.div
-          className="flex justify-center gap-3 mb-8"
+          className="hidden md:flex justify-center gap-3 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
@@ -96,7 +119,7 @@ export default function Galleries() {
           className={
             layout === "grid"
               ? "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-              : "columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4"
+              : "columns-2 md:columns-3 lg:columns-4 gap-4"
           }
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
@@ -108,9 +131,9 @@ export default function Galleries() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.4 + index * 0.1 }}
-              className={layout === "masonry" ? "break-inside-avoid" : ""}
+              className={layout === "masonry" ? "mb-4 break-inside-avoid" : ""}
             >
-              <GalleryItem {...item} />
+              <GalleryItem {...item} layout={layout} />
             </motion.div>
           ))}
         </motion.div>
@@ -123,7 +146,7 @@ export default function Galleries() {
           transition={{ delay: 1.2 }}
         >
           <p className="text-secondary-600 dark:text-secondary-400 mb-6">
-            Ingin melihat lebih banyak produk kami?
+            Ingin melihat lebih banyak produk?
           </p>
           <a
             href="https://www.instagram.com/cheesestick_koe"
