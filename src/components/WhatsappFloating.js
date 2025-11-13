@@ -5,6 +5,13 @@ import { useState } from "react";
 export default function WhatsappFloating() {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const waLink = (phone) => {
+    const message =
+      "Halo admin, saya pengunjung website *cheesestick-koe.my.id* ingin memesan makanan.";
+
+    return `https://wa.me/${phone}?text=${message}`;
+  };
+
   const Instagram = ({ w, h }) => (
     <svg
       role="img"
@@ -25,23 +32,23 @@ export default function WhatsappFloating() {
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            className="bg-white dark:bg-surface rounded-2xl shadow-2xl p-4 max-w-xs"
+            className="bg-white dark:bg-surface-10 rounded-2xl shadow-2xl p-4 max-w-xs"
           >
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 bg-success rounded-full flex items-center justify-center">
                   <Instagram w={5} h={5} />
                 </div>
                 <div>
                   <h4 className="font-sans! font-semibold dark:text-bg-white text-sm">
                     Cheese Stick Koe
                   </h4>
-                  <p className="text-xs text-green-500">Online</p>
+                  <p className="text-xs text-success">Online</p>
                 </div>
               </div>
               <button
                 onClick={() => setIsExpanded(false)}
-                className="text-secondary-400 hover:text-secondary-600 dark:hover:text-secondary-300"
+                className="text-secondary-400 hover:text-secondary-600 dark:hover:text-secondary-300 curs-pointer"
               >
                 <X size={18} />
               </button>
@@ -55,18 +62,18 @@ export default function WhatsappFloating() {
 
             <div className="space-y-2">
               <a
-                href="https://wa.link/9gzsvd"
+                href={waLink("62811973173")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-semibold transition-colors text-center"
+                className="block w-full px-4 py-2 bg-success hover:bg-success/85 text-white rounded-lg text-sm font-semibold transition-colors text-center"
               >
                 Chat Admin 1
               </a>
               <a
-                href="https://wa.link/vi9m34"
+                href={waLink("6281281472627")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-semibold transition-colors text-center"
+                className="block w-full px-4 py-2 bg-success hover:bg-success/85 text-white rounded-lg text-sm font-semibold transition-colors text-center"
               >
                 Chat Admin 2
               </a>
@@ -86,11 +93,11 @@ export default function WhatsappFloating() {
           className="group relative"
         >
           {!isExpanded && (
-            <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-75" />
+            <span className="absolute inset-0 rounded-full bg-success animate-ping opacity-75" />
           )}
 
           <motion.div
-            className="relative w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-green-500/50 transition-all cursor-pointer"
+            className="relative w-16 h-16 bg-success rounded-full flex items-center justify-center shadow-2xl hover:shadow-green-500/50 transition-all cursor-pointer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -121,10 +128,10 @@ export default function WhatsappFloating() {
 
           {!isExpanded && (
             <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-              <div className="bg-secondary-900 dark:bg-gray-700 text-white px-4 py-2 rounded-lg shadow-lg text-sm font-medium">
+              <div className="dark:bg-slate-700 text-white px-4 py-2 rounded-lg shadow-lg text-sm font-medium">
                 Butuh bantuan? Chat kami!
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full">
-                  <div className="w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-secondary-900 dark:border-l-gray-700" />
+                  <div className="w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-secondary-900 dark:border-l-slate-700" />
                 </div>
               </div>
             </div>
